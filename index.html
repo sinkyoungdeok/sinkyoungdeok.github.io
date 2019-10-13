@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>webprogramming</title>
+        <style>
+        body, html {
+            margin: -20px;
+            padding: 0px;
+            height: 100%;
+
+        }
+        #first {
+            position: relative;
+            background-image: url('bg-masthead.jpg');
+            width: 107vw;
+            height:60vw;
+            opacity: 1.0;
+            background-position: center center;
+            margin:auto;
+            padding:0vw;
+            z-index:1;
+        }
+        #second {
+            position: relative;
+            background-color: #F4623B;
+            width: 107vw;
+            height: 60vw;
+            opacity: 1.0;
+            margin:-4vw auto auto auto;
+            padding:0vw;
+        }
+        #third {
+            position: relative;
+            background-color: #ffffff;
+            width: 107vw;
+            height: 60vw;
+            opacity: 1.0;
+            margin:-4vw auto auto auto;
+            padding:0vw;
+        }
+        #fourth {
+            position: relative;
+            background-color: #F4623B;
+            width: 107vw;
+            height: 60vw;
+            opacity: 1.0;
+            margin:-4vw auto auto auto;
+            padding:0vw;
+        }
+        #one{
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            font-size: 20px;
+            z-index:2;
+        }
+        #two{
+            position: fixed;
+            top:15px;
+            right:130px;
+            font-size: 20px;
+            z-index:2;
+        }
+        #three{
+            position: fixed;
+            top:15px;
+            right:70px;
+            font-size: 20px;
+            z-index:2;
+        }
+        #four{
+            position: fixed;
+            top:15px;
+            right:20px;
+            font-size: 20px;
+            z-index:2;
+        }
+        a[class="scroll"]:link {
+            text-decoration: none; 
+            color:#cdc8c5;
+        }
+        a[class="scroll"]:visited {
+            text-decoration: none; 
+            color:#cdc8c5;
+        }
+        a[class="scroll"]:hover {
+            text-decoration: none; 
+            color:#cdc8c5;
+        }
+
+
+        h1 {
+            font-size: 4vw;
+            position: relative;
+            text-align:center;
+            top: 20vw;
+            color:#ffffff;
+        }
+        #second > h1 {
+            top: 12vw;
+        }
+        #third > h1 {
+            color:#212529;
+            top: 12vw;
+        }
+        #fourth > h1 {
+            top: 12vw;
+        }
+        hr {
+            position: relative;
+            top: 20vw;
+            width: 5vw;
+            border: solid 1px #FF5000
+        }
+        #second > hr{
+           top: 12vw;
+           border: solid 1px #ffffff;
+        }
+        #third > hr{
+            top: 12vw;
+        }
+        #fourth > hr{
+            top: 12vw;
+            border: solid 1px #ffffff;
+        }
+        p {
+            font-size: 2vw;
+            position: relative;
+            top: 20vw;
+            color: #CAC7CE;
+            text-align: center;
+        }
+        #second > p{
+            top: 12vw;
+            color:#ffffff;
+        }
+        #third > p{
+            top: 12vw;
+            color:#000000;
+        }
+        #fourth > p{
+            top: 12vw;
+            color:#ffffff;
+        }
+        /*
+        .btn {
+            width:10%;
+            background-color: #FF5000;
+            color:#ffffff;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 20px;
+            padding:10px 60px 10px 60px;
+
+        }*/
+        
+        .btn {
+            position: absolute;
+            background-color: #FF5000;
+            border: none;
+            color:#ffffff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5vw;
+            border-radius: 20px;
+            top: 41vw; left:50%; transform: translate(-50%,-50%);
+            width:8vw; height:auto;
+            /*padding:10px 60px 10px 60px;*/
+            padding:1vw 6vw 1vw 6vw;
+
+           
+        }
+        
+        .btn2 {
+            position: absolute;
+            background-color: #ffffff;
+            border: none;
+            color:#212529;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5vw;
+            border-radius: 20px;
+            top: 41vw; left:50%; 
+            width:8%; height:auto;
+            padding:1vw 6vw 1vw 6vw;
+            transform: translate(-50%,-50%);
+           
+        }
+        a[class="btn"]:link,a[class="btn2"]:link {
+            text-decoration: none; 
+        }
+        a[class="btn"]:visited,a[class="btn2"]:visited {
+            text-decoration: none; 
+        }
+        a[class="btn"]:hover,a[class="btn2"]:hover {
+            text-decoration: none; 
+        }
+
+        .panel {
+            -webkit-transition: -webkit-transform 1s ease-out;
+            transition: transform 1s ease-in-out;
+        }
+        a[id = "first"]:target ~ #main div.panel{
+                -webkit-transform: translateY( 0px);
+                transform: translateY( 0px );
+        }
+        a[id = "second"]:target ~ #main div.panel{
+                -webkit-transform: translateY( -55vw);
+                transform: translateY( -55vw );
+        }
+        a[id = "third"]:target ~ #main div.panel{
+                -webkit-transform: translateY( -110vw);
+                transform: translateY( -110vw );
+        }
+        a[id = "fourth"]:target ~ #main div.panel{
+                -webkit-transform: translateY( -165vw);
+                transform: translateY( -165vw );
+        }
+        dl{
+            margin-top:16vw;
+            font-size:2.3vw;
+            margin-left:13vw;
+            color:#212529;
+
+        }
+        dt{
+            font-weight:bold;
+        }
+        </style>
+
+    </head>
+    
+    <body>
+    <a id="first"></a>
+    <a id="second"></a>
+    <a id="third"></a>
+    <a id="fourth"></a>
+        <section id="main">
+                <div id="one"> <a href="#first" class ="scroll">scroll up </a></div>
+                <div id="two"> <a href="#second" class="scroll">two </a></div>
+                <div id="three"> <a href="#third" class="scroll">three</a></div>
+                <div id="four"> <a href="#fourth" class="scroll">four</a></div>
+                <!-- -->
+                <div id="first" class="panel">
+                    <h1> Sungkyunkwan University</h1>
+                    <hr>
+                    <p> Sin Gyeong Duck</p>
+                    <p> 2017315471</p> 
+                    <center><a href="#second" class="btn"> More </a></center>
+                </div>
+                <div id="second" class="panel">
+                    <h1> SKILLS </h1>
+                    <hr>
+                    <p> Language: C, C++, Java, Python, CSS, javaScript, HTML </p>
+                    <p> Technology: Linux(Ubuntu, Centos), Android, JSP, Node.js, Flask(Python),</p> 
+                    <p> Django(Python), Mysql, Orable, SQL Server </p>
+                    <a href="#third" class="btn2"> More </a>
+                <!-- -->
+                </div>
+                <!-- -->
+                <div id="third" class="panel">
+                    <h1> PROJECTS </h1>
+                    <hr>
+                    <dl>
+                        <dt> News Recommendation System (May 2019) - project team leader </dt>
+                        <dd> - Building a  website and relational database </dd>
+                        <dd> - Select and implement machine learning technology for system</dd>
+                        </br>
+                        <dt>Application For Stray Cat (September 2019) – project team leader & mentor</dt>
+                        <dd> - Android app development training for team members who don’t know about app</dd>
+                        <dd> - As team leader, Allocates roles to team members</dd>
+                    </dl>
+                       
+                </div>
+                <!-- -->        
+                <div id="fourth" class="panel">
+                    <h1> EDUCATION </h1>
+                    <hr>
+                    <p> Sungkyunkwan University, Seoul, South Korea </p>
+                    <p> Bachelor Of Software Expected[02. 2020]</p>
+                    <p> Honors: Scholarship For Academic Excellence</p>
+                    <p> Coursework: Data Structure, Algorithms, Artificial Intelligence</p>
+                    <p> Computer Architecture, Operating System, System Programming </p>
+                    <p> DataBase, Mobile App Programming, ... </p>
+                </div>
+
+         </section>
+        
+    </body>
+
+
+</html>
