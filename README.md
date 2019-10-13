@@ -1,2 +1,0 @@
-# sinkyoungdeok.github.io
-webprogramming
