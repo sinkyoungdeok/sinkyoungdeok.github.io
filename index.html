@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>webprogramming</title>
+        <title>web programming</title>
         <style>
         body, html {
             margin: -20px;
@@ -11,7 +11,8 @@
         #first {
             position: relative;
             background-image: url('bg-masthead.jpg');
-            width: 107vw;
+            background-size: cover;
+            width: 100vw;
             height:60vw;
             opacity: 1.0;
             background-position: center center;
@@ -22,7 +23,7 @@
         #second {
             position: relative;
             background-color: #F4623B;
-            width: 107vw;
+            width: 100vw;
             height: 60vw;
             opacity: 1.0;
             margin:-4vw auto auto auto;
@@ -31,7 +32,7 @@
         #third {
             position: relative;
             background-color: #ffffff;
-            width: 107vw;
+            width: 100vw;
             height: 60vw;
             opacity: 1.0;
             margin:-4vw auto auto auto;
@@ -40,7 +41,7 @@
         #fourth {
             position: relative;
             background-color: #F4623B;
-            width: 107vw;
+            width: 100vw;
             height: 60vw;
             opacity: 1.0;
             margin:-4vw auto auto auto;
@@ -204,26 +205,33 @@
                 transform: translateY( 0px );
         }
         a[id = "second"]:target ~ #main div.panel{
-                -webkit-transform: translateY( -55vw);
-                transform: translateY( -55vw );
+                -webkit-transform: translateY( -58vw);
+                transform: translateY( -58vw );
         }
         a[id = "third"]:target ~ #main div.panel{
-                -webkit-transform: translateY( -110vw);
-                transform: translateY( -110vw );
+                -webkit-transform: translateY( -118vw);
+                transform: translateY( -118vw );
         }
         a[id = "fourth"]:target ~ #main div.panel{
-                -webkit-transform: translateY( -165vw);
-                transform: translateY( -165vw );
+                -webkit-transform: translateY( -176vw);
+                transform: translateY( -176vw );
         }
         dl{
-            margin-top:16vw;
+            margin-top:15vw;
             font-size:2.3vw;
             margin-left:13vw;
             color:#212529;
 
         }
+        dd{
+            margin-left:3vw;
+        }
         dt{
             font-weight:bold;
+        }
+        #fourth > dl {
+            margin-left:23vw;
+            color:#ffffff;
         }
         </style>
 
@@ -263,10 +271,10 @@
                     <dl>
                         <dt> News Recommendation System (May 2019) - project team leader </dt>
                         <dd> - Building a  website and relational database </dd>
-                        <dd> - Select and implement machine learning technology for system</dd>
+                        <dd> - implement machine learning technology for system</dd>
                         </br>
-                        <dt>Application For Stray Cat (September 2019) – project team leader & mentor</dt>
-                        <dd> - Android app development training for team members who don’t know about app</dd>
+                        <dt>Application For Stray Cat (September 2019) – project team leader</dt>
+                        <dd> - Android app development training for team members</dd>
                         <dd> - As team leader, Allocates roles to team members</dd>
                     </dl>
                        
@@ -275,12 +283,15 @@
                 <div id="fourth" class="panel">
                     <h1> EDUCATION </h1>
                     <hr>
-                    <p> Sungkyunkwan University, Seoul, South Korea </p>
-                    <p> Bachelor Of Software Expected[02. 2020]</p>
-                    <p> Honors: Scholarship For Academic Excellence</p>
-                    <p> Coursework: Data Structure, Algorithms, Artificial Intelligence</p>
-                    <p> Computer Architecture, Operating System, System Programming </p>
-                    <p> DataBase, Mobile App Programming, ... </p>
+                    <dl>
+                    <dt> Sungkyunkwan University, Seoul, South Korea </dt>
+                    <dd> - Bachelor Of Software Expected[02. 2020]</dd>
+                    <dt> Coursework </dt>
+                    <dd>- Data Structure, Algorithms, Artificial Intelligence</dd>
+                    <dd>- Computer Architecture, Operating System </dd>
+                    <dd>- DataBase, Mobile App Programming </dd>
+                    <dd>- System Programming, ... </dd>
+                    </dl>
                 </div>
 
          </section>
