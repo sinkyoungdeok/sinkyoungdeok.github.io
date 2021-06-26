@@ -1,4 +1,7 @@
 /* Base */
+ul.list-unstyled li {
+  line-height: 90%
+}
 body {
   line-height: 1.7;
   color: gray;
